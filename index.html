@@ -12,11 +12,24 @@
 </head>
 
 <body>
-    <header class="header center">
+    <div class="box-content">
+            <header class="header center">
         <div class="header__left">
             <a href="index.html" class="logo"><img src="Logo1.svg" alt=""></a>
         </div>
-        <div class="header__right"></div>
+        <div class="header__right">
+                <label for="burger">
+                    <img src="burger.svg" alt="burger-menu"></label>
+                    <input id="burger" type="checkbox">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </nav>
+        </div>
 
     </header>
     <div class="top-head center">
@@ -28,7 +41,7 @@
         </nav>
     </div>
     <div class="filter-sort center">
-        <details class="filter" open>
+        <details class="filter">
             <summary class="filter__summary">
                 <span class="filter__heading">FILTER</span><svg width="15" height="12" viewBox="0 0 15 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -38,11 +51,78 @@
                 </svg>
             </summary>
             <div class="filter__content">
+                <details open class="filter__item">
+                    <summary class="filter__head">CATEGORY</summary>
+                    <div class="filter__link-box">
+                        <a href="#" class="filter__link">Завтраки</a>
+                        <a href="#" class="filter__link">Десерты</a>
+                        <a href="#" class="filter__link">Напитки</a>
+                        <a href="#" class="filter__link">Соусы</a>
+                        <a href="#" class="filter__link">Другое</a>
+                    </div>
+                </details>
                 <details class="filter__item">
-
+                    <summary class="filter__head">BRAND</summary>
+                    <div class="filter__link-box">
+                        <a href="#" class="filter__link">Завтраки</a>
+                        <a href="#" class="filter__link">Десерты</a>
+                        <a href="#" class="filter__link">Напитки</a>
+                        <a href="#" class="filter__link">Соусы</a>
+                        <a href="#" class="filter__link">Другое</a>
+                    </div>
+                </details>
+                <details class="filter__item">
+                    <summary class="filter__head">DESIGNER</summary>
+                    <div class="filter__link-box">
+                        <a href="#" class="filter__link">Завтраки</a>
+                        <a href="#" class="filter__link">Десерты</a>
+                        <a href="#" class="filter__link">Напитки</a>
+                        <a href="#" class="filter__link">Соусы</a>
+                        <a href="#" class="filter__link">Другое</a>
+                    </div>
                 </details>
             </div>
         </details>
+        <div class="sort">
+            <details class="sort__details">
+                <summary class="sort__summary"><span class="sort__heading">TRENDING NOW</span><svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.707031 1L5.71697 6" stroke="#6F6E6E" stroke-linecap="round" />
+                        <path d="M5.7168 6L10.7267 1" stroke="#6F6E6E" stroke-linecap="round" />
+                    </svg>
+                </summary>
+            </details>
+            <details class="sort__details">
+                <summary class="sort__summary"><span class="sort__heading">SIZE</span><svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.707031 1L5.71697 6" stroke="#6F6E6E" stroke-linecap="round" />
+                        <path d="M5.7168 6L10.7267 1" stroke="#6F6E6E" stroke-linecap="round" />
+                    </svg>
+                </summary>
+                <div class="sort__box">
+                    <div class="sort__check">
+                        <input id="sort__check1" type="checkbox">
+                        <label for="sort__check1">XS</label>
+                    </div>
+                    <div class="sort__check">
+                        <input id="sort__check2" type="checkbox">
+                        <label for="sort__check2">S</label>
+                    </div>
+                                        <div class="sort__check">
+                        <input id="sort__check3" type="checkbox">
+                        <label for="sort__check3">L</label>
+                    </div>
+                </div>
+            </details>
+            <details class="sort__details">
+                <summary class="sort__summary"><span class="sort__heading">PRICE</span><svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.707031 1L5.71697 6" stroke="#6F6E6E" stroke-linecap="round" />
+                        <path d="M5.7168 6L10.7267 1" stroke="#6F6E6E" stroke-linecap="round" />
+                    </svg>
+                </summary>
+            </details>
+        </div>
     </div>
     <div class="product-box center">
         <div class="product">
@@ -81,6 +161,7 @@
                 <div class="product__price">910 ₽</div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
